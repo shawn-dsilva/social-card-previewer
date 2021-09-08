@@ -18,13 +18,15 @@ function Main() {
 }
   return (
     <div>
-        <h3>Enter the URL of an Open Graph tags compatible site</h3>
+        <h3 className="underline">Enter the URL of an Open Graph tags compatible site</h3>
         <form className="formContainer" onSubmit={handleSubmit}>
         <input className="inputBox" type="text" value={input} onChange={event => setInput(event.target.value)}/>
       <input className="submitButton" type="submit" value="➜" />
     </form>
-        <h3>Social Card Preview</h3>
-        { data ? <CardGen data={data}/> : null}
+        { data ? <div>
+          <h3 className="underline" >Social Card Preview</h3>
+          <CardGen data={data}/>
+        </div> : null}
         
     </div>
       );
