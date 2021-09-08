@@ -40,7 +40,7 @@
 .formContainer {
   display:flex;
   flex-direction: row;
-  max-width: 70%;
+  max-width: 85%;
 }
 
 .inputBox {
@@ -104,10 +104,10 @@
 .cardContainerText p {
   font-size: 1rem;
   margin:0;
-  max-width: 95%;
+  /* max-width: 95%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 }
 
 .cardContainerText span {
