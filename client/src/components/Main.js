@@ -10,9 +10,11 @@ function Main() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const body = { target:`https://${input}` };
+    const body = { target:`${input}` };
     axios.post('/api/scrapesite',body).then((response) => {
       console.log(response);
+      let url = response.data.url; 
+      response.data.url = url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
       setData(response.data);
     });
 }

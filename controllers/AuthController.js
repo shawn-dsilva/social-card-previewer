@@ -13,7 +13,7 @@ const metascraper = require('metascraper')([
 exports.getSite = (req, res) => {
   const { target } = req.body;
   (async () => {
-    const { body: html, url } = await got(target)
+    const { body: html, url } = await got(`https://${target}`)
     const metadata = await metascraper({ html, url })
     console.log(metadata)
     return res.status(200).json(metadata);

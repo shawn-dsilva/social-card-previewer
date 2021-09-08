@@ -69,3 +69,44 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.cardContainer {
+  width: 50%;
+  border: 1px lightgrey solid;
+  border-radius: 10px;
+  margin:0 auto;
+}
+
+.cardContainer img {
+  height:70%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+
+.cardContainerText {
+  text-align: left;
+  margin-left: 0.8rem;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+
+.cardContainerText h3 {
+  font-size: 1rem;
+  margin:0;
+  padding:0;
+}
+
+.cardContainerText p {
+  font-size: 1rem;
+  margin:0;
+}
+
+.cardContainerText span {
+  font-size: 0.9rem;
+  color:grey;
+  text-align: left;
+  display: block;
+  padding:3px;
+}
