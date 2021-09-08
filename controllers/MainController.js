@@ -35,6 +35,7 @@ exports.getSite = (req, res) => {
     const metadata = await metascraper({ html, url })
     console.log(metadata)
     metadata.description = truncate(metadata.description);
+    metadata.url = metadata.url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
     return res.status(200).json(metadata);
   })()
 
