@@ -26,9 +26,8 @@ function Main() {
       <input className="submitButton" type="submit" value="➜" />
     </form>
         <h3>Social Card Preview</h3>
-        <p>
-        <CardGen data={data}/>
-        </p>
+        { data ? <CardGen data={data}/> : null}
+        
     </div>
       );
 }

@@ -40,6 +40,7 @@
 .formContainer {
   display:flex;
   flex-direction: row;
+  max-width: 70%;
 }
 
 .inputBox {
@@ -52,6 +53,10 @@
   outline: none;
   padding:10px;
   width:100%;
+}
+
+.formContainer {
+  margin: 0 auto;
 }
 
 .inputBox:focus {
@@ -71,7 +76,7 @@
 }
 
 .cardContainer {
-  width: 50%;
+  max-width: 600px;
   border: 1px lightgrey solid;
   border-radius: 10px;
   margin:0 auto;
@@ -87,9 +92,7 @@
 
 .cardContainerText {
   text-align: left;
-  margin-left: 0.8rem;
-  margin-top:4px;
-  margin-bottom:4px;
+  margin:10px;
 }
 
 .cardContainerText h3 {
@@ -101,12 +104,17 @@
 .cardContainerText p {
   font-size: 1rem;
   margin:0;
+  max-width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cardContainerText span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color:grey;
   text-align: left;
   display: block;
   padding:3px;
+  text-transform: uppercase;
 }
