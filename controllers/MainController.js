@@ -9,7 +9,7 @@ const metascraper = require('metascraper')([
   require('metascraper-url')()
 ]);
 
-let validateInput = (target) => {
+const validateInput = (target) => {
   if(target.indexOf("http://") == 0 || target.indexOf("https://") == 0) {
     return target;
   } else {
