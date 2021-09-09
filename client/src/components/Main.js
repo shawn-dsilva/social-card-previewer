@@ -43,7 +43,8 @@ function Main() {
         </div> : null} */}
 
         { firstLoad !== true ? 
-          (isLoading ? <h1>LOADING...</h1>:
+          (isLoading ? 
+          <div class="loadingContainer"><div class="lds-facebook"><div></div><div></div><div></div></div></div>:
           ( data ? 
           <div>
             <h3 className="underline" >Social Card Preview</h3>
